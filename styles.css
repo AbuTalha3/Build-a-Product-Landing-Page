@@ -132,6 +132,15 @@ footer {
     padding-right: 0;
   }
 
+  #how-it-works {
+    text-align: center;
+  }
+  
+  #video {
+    width: 40%;
+    margin: 0 auto; /* Centers the iframe horizontally */
+  }
+
   #nav-bar {
     flex-direction: column;
     align-items: center;
