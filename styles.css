@@ -1,0 +1,148 @@
+html {
+  color: #200a0a;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  background-color: #9dcbe4;
+  color: #200a0a;
+  padding: 10px 20px;
+  height: 82px;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+}
+
+.left-logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#header-img {
+  width: 120px;
+  height: auto;
+  border-radius: 60%;
+  padding-right: 10px;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1; /* Allow nav-bar to take remaining space */
+  padding-right: 20px; /* Adjust padding for responsiveness */
+}
+
+.nav-link {
+  padding: 0 15px; /* Adjust padding for responsiveness */
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #200a0a; /* Set nav link color */
+}
+
+section {
+  padding: 50px 20px;
+}
+
+#video {
+  width: 100%;
+}
+
+.feature-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feature-details-img {
+  width: 100px;
+  height: auto;
+  padding-right: 25px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+#email {
+  margin-top: 20px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #4c31f8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-form {
+  padding-top: 50px;
+}
+
+.heading-p {
+  color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #f98eff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    height: auto;
+  }
+
+  .left-logo {
+    justify-content: center;
+  }
+
+  #header-img {
+    padding-right: 0;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  form {
+    width: 80%;
+  }
+}
